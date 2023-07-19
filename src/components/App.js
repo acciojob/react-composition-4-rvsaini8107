@@ -8,7 +8,7 @@ const App = () => {
   
     const handleChange = (e) => {
       const { name, value } = e.target;
-      setFormValues({ ...formValues, [name]: value });
+      setFormValues({ ...formValues, [name.toLowerCase()]: value });
     };
   
     const handleSubmit = (e) => {
